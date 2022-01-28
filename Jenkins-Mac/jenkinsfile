@@ -1,0 +1,27 @@
+pipeline {
+   agent any
+
+   stages {
+      stage('Clone Git') {
+         steps {
+            echo 'Built by DevOps'
+         }
+      }
+      stage('Build Image') {
+         steps {
+            echo 'Tested by Users'
+         }
+      }
+      stage('Deploy Image') {
+         steps {
+            echo 'Deploy by Vikas'
+         }
+      }
+     stage('Cleaning Up') {
+         steps {
+            echo 'Deployed by Vikas'
+         }
+      }
+   }
+
+}  
